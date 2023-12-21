@@ -1,0 +1,87 @@
+img{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    max-width: 100%;
+    height: auto;
+    opacity:0.3 ;
+
+}
+
+.gradient1{
+    height: 500px;
+    width: 500px;
+    background: radial-gradient(circle at 700px,red,yellow,black);    
+}
+
+.gradient2{
+    height: 500px;
+    width: 500px;
+    background-image: conic-gradient(red 0deg,yellow 45deg,black 90deg,blue 270deg,orange 180deg);   
+    border-radius: 300px; 
+}
+.trasition{
+  width: 100px;
+  height: 400px;
+  background-color: red;
+  transition: width,5s,height,5s;
+  
+}
+.trasition:hover{
+  width: 300px;
+  height: 600px;
+  transform: skew(30deg);
+}
+#name{
+  width: 100px;
+  height: 100px;
+  transition-delay: 20s;
+  transition: width,5s,height,5s;
+
+}
+#name:hover{
+  width: 300px;
+  height: 300px;
+}
+.animate{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  animation-name: first;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position:relative;
+}
+@keyframes first {
+  0%{
+   
+    /* transform: rotate(45deg); */
+    top: 0px;
+    left: 0px;
+    }
+  25%{
+    
+    /* transform: rotate(90deg); */
+    top: 0px;
+    left:500px;
+  }
+  50%{
+    top: 250px;
+    left: 500px;
+  }
+  75%{
+    top: 250px;
+    left: 0px;
+  }
+  100%{
+   
+    left: 0px;
+    top: 0px;
+  }
+
+
+  
+}

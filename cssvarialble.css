@@ -1,0 +1,14 @@
+:root{
+    --b:brown;
+    --r:right;
+}
+.p1{
+    --b:blue;
+    --c:center;
+    color: var(--b);
+    text-align: var(--c);
+}
+h1{
+    color: var(--b);
+    text-align: var(--r);
+}

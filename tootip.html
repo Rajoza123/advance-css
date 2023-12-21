@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .tool .t{
+        visibility: hidden;
+        color: red;
+        background-color: black;
+        width: 150px;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .tool{
+        display: inline-block;
+        border: 2px solid black;
+    }
+    .tool:hover .t{
+        visibility: visible;
+
+    }
+</style>
+<body>
+    <div class="tool">
+        html
+        <span class="t">hyper text markup language</span>
+    </div>
+</body>
+</html>
